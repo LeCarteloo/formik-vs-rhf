@@ -3,6 +3,7 @@ import { FormikPage } from './features/formik/formik-page';
 import { RHFPage } from './features/rhf/rhf-page';
 import Flaws from './features/context-flaws/flaws';
 import { FormikArray } from './features/ array/formik-array';
+import { RHFArray } from './features/ array/rhf-array';
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
         <Routes>
           <Route path="/formik" element={<FormikPage />} />
           <Route path="/rhf" element={<RHFPage />} />
-          <Route path="/array" element={<FormikArray />} />
-
+          <Route path="/rhf-array" element={<RHFArray />} />
+          <Route path="/formik-array" element={<FormikArray />} />
           <Route path="/context-flaws" element={<Flaws />} />
         </Routes>
       </Router>

@@ -27,14 +27,9 @@ export const RHFPage = () => {
     <div style={{ height: 'min-content' }}>
       <h1>Signup (RHF)</h1>
       <form onSubmit={handleSubmit(handleRegistration)} className="card">
-        <input
-          {...register('email', {
-            required: true,
-            pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-          })}
-        />
+        <input {...register('email')} />
         <div>{errors.email?.message}</div>
-        <input {...register('username', { pattern: /^[A-Za-z]+$/i })} />
+        <input {...register('username')} />
         <div>{errors.username?.message}</div>
         <button type="submit">Submit</button>
       </form>
