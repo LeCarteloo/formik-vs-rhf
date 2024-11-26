@@ -14,3 +14,20 @@ body {
   justify-content: center;
   height: 100%;
 }
+
+.flaw {
+  height: min-content;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  background: #F5f5f5;
+  margin-block-end: 0.5em;
+}

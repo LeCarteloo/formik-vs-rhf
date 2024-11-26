@@ -1,7 +1,7 @@
 import { ContextVersion } from './context-version/context-version';
 import { PropsVersion } from './props-version/props-version';
 
-import { UserProvider } from './context.const';
+import { UserProvider } from './const';
 
 export const ContextPage = () => {
   return (

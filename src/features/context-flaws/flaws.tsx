@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import { UserProvider } from './flaws.context';
-import { ComponentOne } from './component-one';
-import { ComponentTwo } from './component-two';
+import { NameComponent } from './name-component';
+import { AgeComponent } from './age-component';
 
 const Flaws = () => {
   const [name, setName] = useState('John');
   const [age, setAge] = useState(18);
 
   return (
-    <div>
+    <div className="flaw">
       <UserProvider
         name={name}
         age={age}
         changeAge={(inAge) => setAge(inAge)}
         changeName={(inName) => setName(inName)}
       >
-        <ComponentOne />
-        <ComponentTwo />
+        <NameComponent />
+        <AgeComponent />
       </UserProvider>
     </div>
   );

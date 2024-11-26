@@ -1,5 +1,5 @@
 import React from 'react';
-import { useUserContext } from '../context.const';
+import { useUserContext } from '../const';
 
 // Create your component
 export const ContextVersion = () => {
