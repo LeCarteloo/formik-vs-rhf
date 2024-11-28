@@ -24,12 +24,10 @@ export const FormikPage = () => {
           <Form className="card">
             <Field name="email" />
             {errors.email && touched.email && <div>{errors.email}</div>}
-
             <Field name="username" />
             {errors.username && touched.username && (
               <div>{errors.username}</div>
             )}
-
             <button type="submit">Submit</button>
           </Form>
         )}

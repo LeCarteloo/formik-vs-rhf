@@ -8,6 +8,8 @@ const schema = yup.object().shape({
   username: yup.string().min(8).max(32).required(),
 });
 
+const handleRegistration = (data: any) => console.log(data);
+
 export const RHFPage = () => {
   const {
     register,
@@ -21,7 +23,6 @@ export const RHFPage = () => {
     resolver: yupResolver(schema),
     mode: 'onChange',
   });
-  const handleRegistration = (data: any) => console.log(data);
 
   return (
     <div style={{ height: 'min-content' }}>
